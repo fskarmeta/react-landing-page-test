@@ -10,9 +10,8 @@ const App = () => (
       <div className="container">
         <div className="row">
           <Jumbotron
-            title="Hello, world!"
-            description="This is a simple hero unit, a simple jumbotron-style component for calling extra
-                          attention to featured content or information."
+            title="A Warm Welcome!"
+            description=""
             button="Learn More"
           />
         </div>
