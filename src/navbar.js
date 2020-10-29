@@ -1,4 +1,5 @@
 import React from "react";
+import { Navlink } from "./navbarlink";
 
 const Navbar = (props) => {
     return(
@@ -10,22 +11,12 @@ const Navbar = (props) => {
       </button>
       <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link" href="#">{props.features} <span className="sr-only">(current)</span></a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">{props.home}</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">{props.pricing}</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link " href="#">{props.contact}</a>
-          </li>
-        </ul>
+            <Navlink />
+          </ul>
       </div>
       </div>
     </nav>
     );
 };
+
 export default Navbar

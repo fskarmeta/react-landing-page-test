@@ -1,8 +1,8 @@
 import React from "react"
 import  Navbar from "./navbar";
 import  Jumbotron  from "./jumbotron";
-//import  Card  from "./cards";
-//import  Footer from "./footer";
+import  Card  from "./cards";
+import  Footer from "./footer";
 
 
 
@@ -19,11 +19,11 @@ const App = () => (
           />
         </div>
         <div className="row mb-3">
-          {/* <Card /> */}
+          <Card />
         </div>
      </div>
       <div className="row">
-        {/* <Footer footer="Copyright"/> */}
+        <Footer footer="Copyright"/>
       </div>
     </>
   );
