@@ -1,7 +1,9 @@
 import React from "react";
 
-const Card = () => {
-  let card = [
+class Card extends React.Component {
+constructor(){
+  super();
+  this.state = [
     {
       card_title: "Card Title 1",
       card_description:
@@ -30,10 +32,12 @@ const Card = () => {
       card_button: "Find Out More!",
       card_img: "http://placehold.it/500x325/",
     },
-  ];
-
-  return(
-    card.map((item, index) => (
+  ]
+}
+  
+render() {
+  return (
+    this.state.map((item, index) => (
       <div className="col-md-3 col-sm-6" key={index}>
         <div className="card text-center">
           <img className="card-img-top" src={item.card_img} alt="Card image cap" />
@@ -49,7 +53,8 @@ const Card = () => {
         </div>
       </div>
     ))
-  );
+  )
+}
 };
 
 export default Card

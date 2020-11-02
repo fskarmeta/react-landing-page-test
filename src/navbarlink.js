@@ -1,11 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 
 export const Navlink = () => {
-let navLinks = ["Home", "About", "Services", "Contact"]
+    const [state, setState] = useState(["Home", "About", "Services", "Contact"])
+ 
     return  (
         <ul className="navbar-nav">
-        {navLinks.map((link,i) => 
+        {state.map((link,i) => 
          <li className="nav-item active" key={i}>
             <a className="nav-link" href="#">{link}</a>
         </li>)}
